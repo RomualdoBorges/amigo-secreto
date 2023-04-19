@@ -38,7 +38,7 @@ describe("na pagina de sorteio", () => {
       </RecoilRoot>
     );
     const opcoes = screen.queryAllByRole("option");
-    expect(opcoes).toHaveLength(participantes.length);
+    expect(opcoes).toHaveLength(participantes.length + 1); // porque já vem uma option por padrão
   });
 
   test("o amigo secreto é exibido quando solicitado", () => {
